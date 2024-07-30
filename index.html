@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="style.css">
+<title>Horiya's Website</title>
+</head>
+<body>
+
+<div class="container">
+    <header class="header">
+        <a href="index.html" class="logo">HS</a>
+        <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="mywork.html">My work</a></li>
+        </ul>
+    </header>
+    <div class="content">
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/horiya-al-sadi-47a96a23a/" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a>
+            <a href="https://github.com/AL7OORII" target="_blank"><img src="github.png" alt="GitHub"></a>
+            <a href="https://www.instagram.com/istoringmoments" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+        </div>
+        <h3>Hey! it's Horiya (حُوريـّة)</h3>
+        <p>Computer science graduate from UWE Bristol, interested in Software development (Web applications and Mobile applications). Apart from that, I love everything in life, I love exploring things and I find myself in everything and I belong to so many things: Photography, travelling, movies, Writing, reading, going out, The sky, The beach, everything... But I love Sunsets differently.</p>
+        <button onclick="location.href='mywork.html'">My work</button>
+        <button onclick="showContactForm()">Get in Touch!</button>
+    </div>
+</div>
+
+<!-- Contact Form Modal -->
+<div id="contactFormModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeContactForm()">&times;</span>
+    <form action="https://formspree.io/f/xwpeovyp" method="post">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br>
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" required></textarea><br>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</div>
+
+<script>
+// Function to show the contact form modal
+function showContactForm() {
+    document.getElementById('contactFormModal').style.display = 'block';
+}
+
+// Function to close the contact form modal
+function closeContactForm() {
+    document.getElementById('contactFormModal').style.display = 'none';
+}
+</script>
+
+</body>
+</html>
+
+
