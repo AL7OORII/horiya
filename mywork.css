@@ -88,6 +88,12 @@ html, body {
     margin-top: 40px;
 }
 
+.circle-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .circle {
     width: 150px;
     height: 150px;
@@ -101,10 +107,29 @@ html, body {
     text-decoration: none;
     font-size: 14px;
     padding: 20px;
-    transition: background 0.3s, transform 0.3s;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    background-size: cover; /* Ensure the image covers the circle */
+    background-position: center; /* Center the background image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow to circles */
+}
+
+#software-circle {
+    background-image: url('software.jpg');
+}
+
+#design-circle {
+    background-image: url('design.jpg');
 }
 
 .circle:hover {
     background-color: rgba(136, 195, 183, 0.898); /* Lighter green on hover */
     transform: scale(1.1); /* Slightly enlarge on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
 }
+
+.circle-text {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
