@@ -88,23 +88,30 @@ body {
     gap: 50px;
 }
 
-.image-container {
+.image-section {
     text-align: center;
 }
 
-.image-container p {
+.image-section p {
     font-size: 18px;
     color: #333; /* Dark text for captions */
     margin-bottom: 10px;
 }
 
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
 .image-container img {
-    width: 300px; /* Adjust the size as needed */
+    width: 200px; /* Adjust the size as needed */
     height: auto;
     border-radius: 10px; /* Rounded corners for images */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow to images */
     transition: transform 0.3s, box-shadow 0.3s;
-    margin: 10px; /* Add space between images */
+    margin: 0.5px; /* Add space between images */
 }
 
 .image-container img:hover {
