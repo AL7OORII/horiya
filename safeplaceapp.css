@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap');
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: #f4f4f4;
+    color: #333;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Navbar Styles */
+.navbar {
+    width: 100%;
+    background-color: rgba(55, 158, 138, 0.898);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar li {
+    list-style: none;
+    padding: 10px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.navbar a:hover {
+    background-color: rgba(136, 195, 183, 0.898);
+}
+
+/* Adjusting icons in navbar */
+.navbar img {
+    width: 20px; /* Adjust the size as needed */
+    height: 20px; /* Adjust the size as needed */
+    vertical-align: middle; /* Align icons vertically */
+}
+
+
+/* Hero Section */
+.hero {
+    width: 100%;
+    height: 60vh;
+    background: url('your-background-image.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 56px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.hero-content h3 {
+    font-size: 24px;
+    color: white;
+    font-weight: 300;
+}
+
+/* Main content styles */
+.content {
+    text-align: center;
+    padding: 40px;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Portfolio Section */
+.portfolio-section {
+    margin-bottom: 60px;
+}
+
+.portfolio-section h2 {
+    font-size: 36px;
+    color: rgba(55, 158, 138, 0.898);
+    margin-bottom: 20px;
+}
+
+.portfolio-section p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.8;
+}
+
+.portfolio-section ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 20px;
+}
+
+.portfolio-section li {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.portfolio-section a {
+    color: rgba(120, 25, 164, 0.898);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.portfolio-section a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Image Styles */
+.responsive-image {
+    width: 80%;
+    height: auto;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.icon {
+    width: 30%;
+    height: auto;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Hero background image adjustments */
+.hero-content h1,
+.hero-content h3 {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
