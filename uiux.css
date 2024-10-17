@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap');
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: #f4f4f4; /* Light background */
+    color: #333; /* Dark text */
+    height: 100%; /* Ensures full height */
+    margin: 0; /* Removes default margin */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Aligns content at the top */
+}
+
+/* Navbar Styles */
+.navbar {
+    width: 100%;
+    background-color: rgba(55, 158, 138, 0.898); /* Bright green */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center vertically */
+    padding: 10px 0;
+    margin: 0; /* Removes default margin */
+    position: fixed; /* Fixes navbar at the top */
+    top: 0; /* Aligns navbar to the top */
+    z-index: 1000; /* Ensures navbar is on top */
+}
+
+.navbar li {
+    list-style: none;
+    padding: 10px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.navbar a:hover {
+    background-color: rgba(136, 195, 183, 0.898); /* Darker green on hover */
+}
+
+/* Adjusting icons in navbar */
+.navbar img {
+    width: 20px; /* Adjust the size as needed */
+    height: 20px; /* Adjust the size as needed */
+    vertical-align: middle; /* Align icons vertically */
+}
+
+/* Content Styles */
+.content {
+    text-align: center;
+    padding: 20px;
+    max-width: 800px;
+    margin: 100px auto 20px; /* Adds margin to separate from fixed navbar */
+    background-color: white; /* White background for content */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.content h3 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: rgba(55, 158, 138, 0.898); /* Bright green for headings */
+}
+
+.content p {
+    font-size: 18px;
+    color: #666; /* Grey text for body */
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.circles {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.circle-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgba(55, 158, 138, 0.898); /* Bright green */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 20px;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    background-size: cover; /* Ensure the image covers the circle */
+    background-position: center; /* Center the background image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow to circles */
+}
+
+#safeplace-circle {
+    background-image: url('safeplaceIcone.png');
+}
+
+
+.circle:hover {
+    background-color: rgba(136, 195, 183, 0.898); /* Lighter green on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}
+
+.circle-text {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
