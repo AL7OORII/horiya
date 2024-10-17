@@ -121,6 +121,11 @@ html, body {
     background-image: url('design.jpg');
 }
 
+#uiux-circle {
+    background-image: url('uiux.jpg');
+}
+
+
 .circle:hover {
     background-color: rgba(136, 195, 183, 0.898); /* Lighter green on hover */
     transform: scale(1.1); /* Slightly enlarge on hover */
