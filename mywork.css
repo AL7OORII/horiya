@@ -8,29 +8,27 @@
 }
 
 html, body {
-    background-color: #f4f4f4; /* Light background */
-    color: #333; /* Dark text */
-    height: 100%; /* Ensures full height */
-    margin: 0; /* Removes default margin */
+    background-color: #f4f4f4;
+    color: #333;
+    height: 100%;
+    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start; /* Aligns content at the top */
+    justify-content: flex-start;
 }
 
 /* Navbar Styles */
 .navbar {
     width: 100%;
-    background-color: rgba(55, 158, 138, 0.898); /* Bright green */
-    overflow: hidden;
+    background-color: rgba(55, 158, 138, 0.898);
     display: flex;
     justify-content: center;
-    align-items: center; /* Center vertically */
+    align-items: center;
     padding: 10px 0;
-    margin: 0; /* Removes default margin */
-    position: fixed; /* Fixes navbar at the top */
-    top: 0; /* Aligns navbar to the top */
-    z-index: 1000; /* Ensures navbar is on top */
+    position: fixed;
+    top: 0;
+    z-index: 1000;
 }
 
 .navbar li {
@@ -47,14 +45,13 @@ html, body {
 }
 
 .navbar a:hover {
-    background-color: rgba(136, 195, 183, 0.898); /* Darker green on hover */
+    background-color: rgba(136, 195, 183, 0.898);
 }
 
-/* Adjusting icons in navbar */
 .navbar img {
-    width: 20px; /* Adjust the size as needed */
-    height: 20px; /* Adjust the size as needed */
-    vertical-align: middle; /* Align icons vertically */
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
 }
 
 /* Content Styles */
@@ -62,29 +59,31 @@ html, body {
     text-align: center;
     padding: 20px;
     max-width: 800px;
-    margin: 100px auto 20px; /* Adds margin to separate from fixed navbar */
-    background-color: white; /* White background for content */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-    border-radius: 10px; /* Rounded corners */
+    margin: 100px auto 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 .content h3 {
     font-size: 36px;
     margin-bottom: 20px;
-    color: rgba(55, 158, 138, 0.898); /* Bright green for headings */
+    color: rgba(55, 158, 138, 0.898);
 }
 
 .content p {
     font-size: 18px;
-    color: #666; /* Grey text for body */
+    color: #666;
     line-height: 1.6;
     margin-bottom: 30px;
 }
 
+/* Circle Layout */
 .circles {
     display: flex;
     justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
     margin-top: 40px;
 }
 
@@ -98,7 +97,6 @@ html, body {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background-color: rgba(55, 158, 138, 0.898); /* Bright green */
     color: white;
     display: flex;
     justify-content: center;
@@ -108,28 +106,30 @@ html, body {
     font-size: 14px;
     padding: 20px;
     transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
-    background-size: cover; /* Ensure the image covers the circle */
-    background-position: center; /* Center the background image */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow to circles */
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Background Images for each Circle */
 #software-circle {
     background-image: url('software.jpg');
+    background-color: rgba(55, 158, 138, 0.9);
 }
 
 #design-circle {
     background-image: url('design.jpg');
+    background-color: rgba(55, 158, 138, 0.9);
 }
 
 #uiux-circle {
     background-image: url('uiux.jpg');
+    background-color: rgba(55, 158, 138, 0.9);
 }
 
-
 .circle:hover {
-    background-color: rgba(136, 195, 183, 0.898); /* Lighter green on hover */
-    transform: scale(1.1); /* Slightly enlarge on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .circle-text {
@@ -138,3 +138,50 @@ html, body {
     color: #333;
 }
 
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    .content h3 {
+        font-size: 28px;
+    }
+
+    .circles {
+        gap: 20px;
+    }
+
+    .circle {
+        width: 120px;
+        height: 120px;
+    }
+
+    .circle-text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar li {
+        padding: 5px;
+    }
+
+    .content h3 {
+        font-size: 24px;
+    }
+
+    .circle {
+        width: 100px;
+        height: 100px;
+    }
+
+    .circle-text {
+        font-size: 12px;
+    }
+}

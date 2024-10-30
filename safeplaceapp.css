@@ -48,13 +48,11 @@ html, body {
     background-color: rgba(136, 195, 183, 0.898);
 }
 
-/* Adjusting icons in navbar */
 .navbar img {
-    width: 20px; /* Adjust the size as needed */
-    height: 20px; /* Adjust the size as needed */
-    vertical-align: middle; /* Align icons vertically */
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
 }
-
 
 /* Hero Section */
 .hero {
@@ -80,7 +78,7 @@ html, body {
     font-weight: 300;
 }
 
-/* Main content styles */
+/* Main Content */
 .content {
     text-align: center;
     padding: 40px;
@@ -138,6 +136,7 @@ html, body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 .icon {
     width: 30%;
     height: auto;
@@ -151,3 +150,79 @@ html, body {
 .hero-content h3 {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    .hero {
+        height: 50vh;
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+    }
+
+    .hero-content h3 {
+        font-size: 18px;
+    }
+
+    .portfolio-section h2 {
+        font-size: 28px;
+    }
+
+    .portfolio-section p, .portfolio-section li {
+        font-size: 16px;
+    }
+
+    .responsive-image {
+        width: 90%;
+    }
+
+    .icon {
+        width: 50%;
+    }
+
+    video {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        padding: 5px 0;
+    }
+
+    .navbar li {
+        padding: 5px;
+    }
+
+    .hero {
+        height: 40vh;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-content h3 {
+        font-size: 16px;
+    }
+
+    .content h3, .portfolio-section h2 {
+        font-size: 24px;
+    }
+
+    .portfolio-section p, .portfolio-section li {
+        font-size: 14px;
+    }
+
+    .responsive-image, .icon {
+        width: 100%;
+    }
+}
+

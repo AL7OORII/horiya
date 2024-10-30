@@ -4,6 +4,7 @@
     font-family: 'Ubuntu', sans-serif;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 a {
@@ -24,14 +25,9 @@ body {
     background-image: linear-gradient(to right, rgba(55, 158, 138, 0.898) 5%, #22030388),
         url(horiya.png);
     background-position: center;
-    background-size: cover; /* Ensures the background image covers the entire container */
-    width: 100vw; /* Full width of the viewport */
-    height: 100vh; /* Full height of the viewport */
-}
-
-.container:hover {
-    background-image: linear-gradient(to right, rgba(55, 158, 138, 0.898) 15%, transparent),
-        url(horiya.png);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
 }
 
 .header {
@@ -66,18 +62,12 @@ ul a:hover {
     border-bottom-color: white;
 }
 
-ul img {
-    width: 20px; /* Adjust the size as needed */
-    height: 20px; /* Adjust the size as needed */
-    margin-left: 10px; /* Add some spacing between the text and the icon */
-}
-
 .content {
     color: white;
     width: 50%;
     margin-top: 50px;
     padding: 30px;
-    text-align: center; /* Center align content */
+    text-align: center;
 }
 
 .content h2 {
@@ -87,26 +77,26 @@ ul img {
 
 .content p {
     letter-spacing: 3px;
-    width: 75%; /* Adjusted width for better readability */
+    width: 75%;
     padding: 20px 0;
-    margin: 20px auto; /* Center the paragraph */
+    margin: 20px auto;
 }
 
 .content button {
     font-size: 30px;
-    padding: 10px 20px; /* Adjusted padding for better button size */
+    padding: 10px 20px;
     border-radius: 10px;
     border: 2px solid transparent;
     cursor: pointer;
-    margin: 10px; /* Add margin for spacing between buttons */
+    margin: 10px;
 }
 
 .content button:hover {
-   background-color: transparent; 
-   border-color: white;
-   color: white;
+    background-color: transparent;
+    border-color: white;
+    color: white;
 }
-/* Updated CSS for a cleaner and organized look */
+
 .modal {
     display: none;
     position: fixed;
@@ -138,70 +128,11 @@ ul img {
 .close:hover,
 .close:focus {
     color: black;
-    text-decoration: none;
     cursor: pointer;
-}
-
-button {
-    background-color: rgb(42, 101, 90);
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: rgb(136, 100, 62);
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    margin-bottom: 5px;
-}
-
-input {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-/* Form Styles */
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-form label {
-    font-size: 16px;
-    margin-bottom: 5px;
-}
-
-form input, form textarea {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-form input[type="submit"] {
-    background: #333;
-    color: #fff;
-    cursor: pointer;
-}
-
-form input[type="submit"]:hover {
-    background: #555;
 }
 
 .social-icons {
-    margin-bottom: 20px; /* Add some spacing below the social icons */
+    margin-bottom: 20px;
 }
 
 .social-icons a {
@@ -210,6 +141,59 @@ form input[type="submit"]:hover {
 }
 
 .social-icons img {
-    width: 20px; /* Adjust the size as needed */
-    height: 20px; /* Adjust the size as needed */
+    width: 20px;
+    height: 20px;
+}
+
+/* Media Queries for Responsive Design */
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+
+    ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .container, .modal-content {
+        width: 100vw;
+        height: auto;
+    }
+
+    .content {
+        width: 90%;
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    .content h2 {
+        font-size: 40px;
+    }
+
+    .content p {
+        width: 100%;
+        letter-spacing: 1px;
+    }
+
+    .content button {
+        font-size: 20px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 24px;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+
+    .social-icons img {
+        width: 16px;
+        height: 16px;
+    }
 }

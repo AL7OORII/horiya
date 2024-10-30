@@ -8,8 +8,8 @@
 }
 
 body {
-    background-color: #f4f4f4; /* Light background */
-    color: #333; /* Dark text */
+    background-color: #f4f4f4;
+    color: #333;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -21,16 +21,14 @@ body {
 /* Navbar Styles */
 .navbar {
     width: 100%;
-    background-color: rgba(55, 158, 138, 0.898); /* Bright green */
-    overflow: hidden;
+    background-color: rgba(55, 158, 138, 0.898);
     display: flex;
     justify-content: center;
-    align-items: center; /* Center vertically */
+    align-items: center;
     padding: 10px 0;
-    margin: 0;
-    position: fixed; /* Fixes navbar at the top */
-    top: 0; /* Aligns navbar to the top */
-    z-index: 1000; /* Ensures navbar is on top */
+    position: fixed;
+    top: 0;
+    z-index: 1000;
 }
 
 .navbar li {
@@ -47,14 +45,13 @@ body {
 }
 
 .navbar a:hover {
-    background-color: rgba(136, 195, 183, 0.898); /* Darker green on hover */
+    background-color: rgba(136, 195, 183, 0.898);
 }
 
-/* Adjusting icons in navbar */
 .navbar img {
-    width: 20px; /* Adjust the size as needed */
-    height: 20px; /* Adjust the size as needed */
-    vertical-align: middle; /* Align icons vertically */
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
 }
 
 /* Content Styles */
@@ -62,31 +59,31 @@ body {
     text-align: center;
     padding: 20px;
     max-width: 800px;
-    margin: 100px auto 20px; /* Adds margin to separate from fixed navbar */
-    background-color: white; /* White background for content */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-    border-radius: 10px; /* Rounded corners */
+    margin: 100px auto 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 .content h3 {
     font-size: 36px;
     margin-bottom: 20px;
-    color: rgba(55, 158, 138, 0.898); /* Bright green for headings */
+    color: rgba(55, 158, 138, 0.898);
 }
 
 .project {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .project h4 {
     font-size: 24px;
     margin-bottom: 10px;
-    color: rgba(55, 158, 138, 0.898); /* Bright green for project titles */
+    color: rgba(55, 158, 138, 0.898);
 }
 
 .project p {
     font-size: 16px;
-    color: #666; /* Grey text for project descriptions */
+    color: #666;
     line-height: 1.6;
     margin-bottom: 20px;
 }
@@ -94,13 +91,13 @@ body {
 .project h5 {
     font-size: 20px;
     margin-bottom: 10px;
-    color: rgba(55, 158, 138, 0.898); /* Bright green for subheadings */
+    color: rgba(55, 158, 138, 0.898);
 }
 
 .project h6 {
     font-size: 18px;
     margin-bottom: 10px;
-    color: #333; /* Dark text for smaller headings */
+    color: #333;
 }
 
 .project ul {
@@ -112,7 +109,7 @@ body {
 
 .project img {
     width: 100%;
-    max-width: 400px; /* Adjust the size as needed */
+    max-width: 400px;
     margin: 20px 0;
     border-radius: 10px;
 }
@@ -127,10 +124,10 @@ body {
 
 .mobile-screenshots img {
     width: 100%;
-    max-width: 150px; /* Smaller size for mobile screenshots */
+    max-width: 150px;
     margin: 10px 0;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Web App Screenshots Styling */
@@ -143,16 +140,78 @@ body {
 
 .web-screenshots img {
     width: 100%;
-    max-width: 200px; /* Adjust size for web app screenshots */
+    max-width: 200px;
     margin: 10px 0;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Ensure three images per row for web app screenshots */
-.web-screenshots img:nth-of-type(3n+1) {
-    margin-right: auto;
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    .content h3 {
+        font-size: 28px;
+    }
+
+    .project h4 {
+        font-size: 22px;
+    }
+
+    .project p, .project ul {
+        font-size: 14px;
+    }
+
+    .project h5, .project h6 {
+        font-size: 18px;
+    }
+
+    .project img {
+        max-width: 300px;
+    }
+
+    .mobile-screenshots img {
+        max-width: 120px;
+    }
+
+    .web-screenshots img {
+        max-width: 160px;
+    }
 }
-.web-screenshots img:nth-of-type(3n+3) {
-    margin-left: auto;
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar li {
+        padding: 5px;
+    }
+
+    .content h3 {
+        font-size: 24px;
+    }
+
+    .project h4 {
+        font-size: 20px;
+    }
+
+    .project p, .project ul {
+        font-size: 13px;
+    }
+
+    .project h5, .project h6 {
+        font-size: 16px;
+    }
+
+    .project img {
+        max-width: 100%;
+    }
+
+    .mobile-screenshots img, .web-screenshots img {
+        max-width: 100px;
+    }
 }

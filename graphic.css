@@ -8,8 +8,8 @@
 }
 
 body {
-    background-color: #f4f4f4; /* Light background */
-    color: #333; /* Dark text */
+    background-color: #f4f4f4;
+    color: #333;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -21,16 +21,16 @@ body {
 /* Navbar Styles */
 .navbar {
     width: 100%;
-    background-color: rgba(55, 158, 138, 0.898); /* Bright green */
+    background-color: rgba(55, 158, 138, 0.898);
     overflow: hidden;
     display: flex;
     justify-content: center;
-    align-items: center; /* Center vertically */
+    align-items: center;
     padding: 10px 0;
     margin: 0;
-    position: fixed; /* Fixes navbar at the top */
-    top: 0; /* Aligns navbar to the top */
-    z-index: 1000; /* Ensures navbar is on top */
+    position: fixed;
+    top: 0;
+    z-index: 1000;
 }
 
 .navbar li {
@@ -47,14 +47,14 @@ body {
 }
 
 .navbar a:hover {
-    background-color: rgba(136, 195, 183, 0.898); /* Darker green on hover */
+    background-color: rgba(136, 195, 183, 0.898);
 }
 
 /* Adjusting icons in navbar */
 .navbar img {
-    width: 20px; /* Adjust the size as needed */
-    height: 20px; /* Adjust the size as needed */
-    vertical-align: middle; /* Align icons vertically */
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
 }
 
 /* Content Styles */
@@ -62,21 +62,21 @@ body {
     text-align: center;
     padding: 20px;
     max-width: 800px;
-    margin: 100px auto 20px; /* Adds margin to separate from fixed navbar */
-    background-color: white; /* White background for content */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-    border-radius: 10px; /* Rounded corners */
+    margin: 100px auto 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 .content h3 {
     font-size: 36px;
     margin-bottom: 20px;
-    color: rgba(55, 158, 138, 0.898); /* Bright green for headings */
+    color: rgba(55, 158, 138, 0.898);
 }
 
 .content p {
     font-size: 18px;
-    color: #666; /* Grey text for body */
+    color: #666;
     line-height: 1.6;
     margin-bottom: 30px;
 }
@@ -94,7 +94,7 @@ body {
 
 .image-section p {
     font-size: 18px;
-    color: #333; /* Dark text for captions */
+    color: #333;
     margin-bottom: 10px;
 }
 
@@ -106,15 +106,65 @@ body {
 }
 
 .image-container img {
-    width: 200px; /* Adjust the size as needed */
+    width: 200px;
     height: auto;
-    border-radius: 10px; /* Rounded corners for images */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow to images */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s, box-shadow 0.3s;
-    margin: 0.5px; /* Add space between images */
+    margin: 0.5px;
 }
 
 .image-container img:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    .content h3 {
+        font-size: 28px;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+
+    .gallery {
+        gap: 30px;
+    }
+
+    .image-section p {
+        font-size: 16px;
+    }
+
+    .image-container img {
+        width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar li {
+        padding: 5px;
+    }
+
+    .content h3 {
+        font-size: 24px;
+    }
+
+    .content p, .image-section p {
+        font-size: 14px;
+    }
+
+    .image-container img {
+        width: 120px;
+    }
 }
